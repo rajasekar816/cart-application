@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./stylesheets/style.css">
+</head>
+
+<body>
+    <hr>
+    <div class="itemHeader">
+        <span class="itemHeaderFont">All Items</span>
+        <span class="itemCartAdded" id="cartDis">Item2 is add to cart</span>
+    </div>
+    <hr>
+    <div>
+        <div class="main">
+            <div class="row" id="innerDiv">
+
+            </div>
+        </div>
+
+        <div class="right">
+            <table class="table-cart">
+                <thead>
+                    <tr>
+                        <th class="cartTh1">Items</th>
+                        <th class="cartTh2">Qty</th>
+                        <th class="cartTh3">Price</th>
+                    </tr>
+                </thead>
+                <tbody id="cartTable">
+
+                </tbody>
+            </table>
+            <hr>
+            <table class="order-total">
+                <thead>
+                    <tr class="textAlignLeft">
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody id="totalTable">
+                    <tr>
+                        <td id="items" class="textAlignLeft"></td>
+                        <td> : </td>
+                        <td id="cartTotals" class="textAlignCenter">$0</td>
+                    </tr>
+                    <tr>
+                        <td class="textAlignLeft">Discount</td>
+                        <td> : </td>
+                        <td id="discTotals" class="textAlignCenter">$0</td>
+                    </tr>
+                    <tr>
+                        <td class="textAlignLeft">Type Discount</td>
+                        <td> : </td>
+                        <td id="tyepDisTotals" class="textAlignCenter">$0</td>
+                    </tr>
+                </tbody>
+                <tfoot class="totalDivId">
+                    <tr class="textAlignLeft">
+                        <td>Order Total</td>
+                        <td> : </td>
+                        <td id="orderTotals" class="textAlignCenter">$0</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+</body>
+<script>
+    //var xhttp = new XMLHttpRequest();
+    //xhttp.onreadystatechange = function () {
+    //    if (this.readyState == 4 && this.status == 200) {
+    //        document.getElementById("demo").innerHTML = this.responseText;
+    //    }
+    //};
+    //xhttp.open("GET", "https://api.jsonbin.io/b/5f6b6cd665b18913fc51f71f", true);
+    //xhttp.send();
+</script>
+<script src="./scripts/index.min.js"></script>
+
+</html>
